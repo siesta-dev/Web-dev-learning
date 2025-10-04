@@ -52,13 +52,13 @@ main {
 }
 
 #scroll-pane::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari, Edge */
+  display: none;  
 }
 
 #lyrics td {
   padding: 4px;
   text-align: center;
-  cursor: pointer;   /* show hand cursor */
+  cursor: pointer;  
 }
 
 .selected {

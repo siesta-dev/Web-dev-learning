@@ -1,7 +1,7 @@
 const audio = document.getElementById("audio");
 const rows = document.querySelectorAll("#lyrics tr");
 
-// Timestamps (start, end) for each row (same order as HTML table)
+// Timestamps (start, end) for each row 
 const timings = [
   [0, 12], //.....
   [13, 15],   // Sintang Paaralan
@@ -44,7 +44,7 @@ audio.addEventListener("timeupdate", () => {
 });
 
 
-// Add click event for each lyric row
+//For Interactive lyrics navigation
 rows.forEach((row, i) => {
   row.addEventListener("click", () => {
     const [start] = timings[i]; // get start time for that lyric
