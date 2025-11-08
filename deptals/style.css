@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+
+#info-card {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    padding: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    z-index: 100;
+    pointer-events: none;
+    width: 200px; 
+    }
+#info-card img {
+    max-width: 100%; /* Make image responsive to card width */
+    height: auto;
+    display: block;
+    border-radius: 5px; /* Slightly rounded corners for the image */
+}
+#info-card p {
+    margin: 8px 0 0 0; /* Add space between image and text */
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
