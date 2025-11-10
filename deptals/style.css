@@ -17,8 +17,15 @@
     box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
     z-index: 100;
     pointer-events: none;
-    width: 180px; 
+    width: 240px; 
     }
+
+#info-card img {
+    max-width: 100%; /* Make image responsive to card width */
+    height: auto;
+    display: block;
+        border-radius: 5px; /* Slightly rounded corners for the image */
+}
 
 #info-card p {
     margin: 3px 0 0 0; /* Add space between image and text */
