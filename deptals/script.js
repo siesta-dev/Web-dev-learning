@@ -6,25 +6,21 @@ document.addEventListener('DOMContentLoaded', () => {
         area.addEventListener('mouseenter', (e) => {
             // Get both info and image URL
             const info = e.target.getAttribute('data-info');
-            const image = e.target.getAttribute('data-image');
+            const area_name = e.target.getAttribute('area-title');
 
-            if (info || image) {
                 // Build HTML for the card
-                let cardContent = '';
+            let cardContent = '';
 
-                if (image) {
-                    // Use a real path for 'src'
-                    cardContent += `<img src="${image}" alt="Location Image">`;
-                }
-
-                if (info) {
-                    cardContent += `<p>${info}</p>`;
-                }
-
-                // Put the new HTML into the card
-                card.innerHTML = cardContent;
-                card.style.display = 'block';
+            if (info) {
+                cardContent += `<p>${info}</p>`;
             }
+
+            if (area_name){
+                cardContent = `<h3>${area_name}</h3>` + cardContent;
+            }
+                // Put the new HTML into the card
+            card.innerHTML = cardContent;
+            card.style.display = 'block';
         });
 
         // This event listener for 'mousemove' is unchanged
